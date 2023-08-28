@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thanksMessage</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .Logo{
+            border-radius: 50%;
+            height: 23%;
+            width: 12%;
+            box-shadow: 2px 2px 10px #ffdd43;
+            position: absolute;
+            margin-top: -18%;
+            margin-left: -65%;
+        }
+        h1, h2{
+            color: white;
+        }
+        img{
+            box-shadow: 2px 2px 20px #ffdd43;
+        }
+
+        #goBackBtn {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        padding: 13px 20px 13px;
+        outline: 0;
+        border: 1px solid white;
+        cursor: pointer;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        margin-left: 0%;
+        margin-top: 1%;
+        }
+
+        #goBackBtn:after {
+        content: "";
+        background-color: #ffe54c;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.3s;
+        }
+
+        #goBackBtn:hover:after {
+        top: 0px;
+        left: 0px;
+        }
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 13px 50px 13px;
+  }
+}
+        @media only screen and (max-width: 1024px){
+            .Logo{
+                width: 14%;
+               margin-left: -73%;
+                margin-top: -23%;
+            }
+            img{
+                margin-top: -3%;
+            }
+        }
+
+        @media only screen and (max-width: 768px){
+            .Logo{
+                width: 20%;
+               margin-left: -81%;
+                margin-top: -26%;
+            }
+        }
+
+        @media only screen and (max-width: 425px){
+            .Logo{
+                width: 26%;
+                height: 17%;
+               margin-left: -90%;
+                margin-top: -38%;
+            }
+
+            h1, h2{
+            font-size: x-large;
+            margin-left: 20%;
+        }
+            img{
+                width: 85%;
+                height: 85%;
+            }
+        }
+
+        @media only screen and (max-width: 375px){
+            .Logo{
+                width: 28%;
+                height: 15%;
+               margin-left: -90%;
+                margin-top: -36%;
+            }
+
+            h1, h2{
+            font-size: large;
+            margin-left: 20%;
+        }
+            img{
+                width: 85%;
+                height: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <h1>תודה שבחרת גולן קפל</h1>
+            <h2>אחזור אלייך בהקדם האפשרי</h2><br><br>
+            <img src="https://cdn.pixabay.com/animation/2023/04/21/07/51/07-51-48-543_512.gif" alt="thanks gif">
+            <img class="Logo" src="./Media/Golan Kapel logo.png" alt="thanks message"><br>
+            <button id="goBackBtn">חזור לדף ראשי</button>
+        </div>
+</body>
+<script src="./index.js"></script>
+</html>
